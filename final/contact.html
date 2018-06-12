@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+	<title>My first website</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+		<style>
+			#container{
+				padding:100px;
+			}
+			#title{
+				text-align: center;
+				margin-bottom: 20px
+			}
+			#map, #contact{
+				float:left;
+			}
+			#map{
+				height:50vh;
+				width:64%;
+			}
+			#contact{
+				width:33%;
+				padding-left:30px;
+			}
+			
+			label{
+				font-size:24px;
+				padding-bottom:20px;
+				display: inline-block;
+				width:100%;
+			}
+			input, textarea{
+				padding:10px;
+				border-radius:10px;
+				border:1px solid #D4CDC3;
+				width:100%;
+/*				background:#D5D0CD;*/
+			}
+			
+			
+		</style>
+</head>
+
+<body>
+	<header>
+		<h1 id="logo">logo</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="container">
+		<h1 id="title">HIRE ME NOW!</h1>
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.8048236514855!2d-74.0101602845967!3d40.656232579338074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ac0786c3207%3A0x97a4c7862e8ef155!2sIndustry+City!5e0!3m2!1sen!2sus!4v1518015212956" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen ></iframe>
+		</div>
+		<div id="contact">
+			<form>
+				<label> Name<br>
+						<input type="text" name="name">
+					</label>
+				<br>
+				<label> Email<br>
+						<input type="email" name="email">
+					</label>
+				<br>
+				<label> Phone<br>
+						<input type="text" name="phone">
+					</label>
+				<br>
+				<textarea name="message"></textarea>
+				<br>
+				<input type="submit" name="submit" value="I'm Hired!">
+			</form>
+		</div>
+		<br class="clear">
+	</div>
+
+	<footer>
+		<a href="index.html">Home</a> |
+		<a href="contact.html">Contact</a>
+	</footer>
+</body>
+</html>
